@@ -14,7 +14,7 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 92%;
 
-    --primary: 0 85% 65%;
+    --primary: 0 85% 60%;
     --primary-foreground: 0 0% 5%;
 
     --secondary: 0 15% 12%;
@@ -23,7 +23,7 @@
     --muted: 0 10% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 0 75% 60%;
+    --accent: 0 75% 55%;
     --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84% 60%;
@@ -31,7 +31,7 @@
 
     --border: 0 15% 20%;
     --input: 0 15% 18%;
-    --ring: 0 85% 65%;
+    --ring: 0 85% 60%;
 
     --radius: 0.75rem;
   }
@@ -43,30 +43,25 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
-    background: linear-gradient(135deg, #0a0000 0%, #1a0505 25%, #2d0808 50%, #1a0505 75%, #0a0000 100%);
+    @apply bg-black text-foreground font-inter;
     min-height: 100vh;
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(239, 68, 68, 0.1) 30%, rgba(185, 28, 28, 0.12) 70%, rgba(127, 29, 29, 0.08) 100%);
+    background: #dc2626;
   }
   
   .card-gradient {
-    background: linear-gradient(135deg, rgba(10, 0, 0, 0.95) 0%, rgba(26, 5, 5, 0.98) 50%, rgba(45, 8, 8, 0.95) 100%);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(220, 38, 38, 0.2);
+    background: #000000;
+    border: 1px solid #dc2626;
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #dc2626, #ef4444, #b91c1c, #7f1d1d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #dc2626;
   }
   
   .btn-primary {
-    background: linear-gradient(135deg, #dc2626, #ef4444, #b91c1c);
+    background: #dc2626;
     box-shadow: 0 4px 24px rgba(220, 38, 38, 0.4);
     transition: all 0.3s ease;
   }
@@ -74,12 +69,11 @@
   .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(220, 38, 38, 0.6);
+    background: #b91c1c;
   }
 
   .decorative-pattern {
-    background-image: 
-      radial-gradient(circle at 25% 25%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(239, 68, 68, 0.05) 0%, transparent 50%);
+    background: #000000;
   }
 
   .glow-red {
