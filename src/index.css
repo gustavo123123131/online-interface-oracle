@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-black text-foreground font-inter;
+    @apply bg-black text-white font-inter;
     min-height: 100vh;
   }
   
@@ -52,8 +52,8 @@
   }
   
   .card-gradient {
-    background: #000000;
-    border: 1px solid #dc2626;
+    background: #ffffff;
+    border: 2px solid #000000;
   }
   
   .text-gradient {
@@ -62,34 +62,31 @@
   
   .btn-primary {
     background: #dc2626;
-    box-shadow: 0 4px 24px rgba(220, 38, 38, 0.4);
+    color: #ffffff;
+    border: 2px solid #000000;
     transition: all 0.3s ease;
   }
   
   .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.6);
-    background: #b91c1c;
+    background: #ffffff;
+    color: #dc2626;
+    border: 2px solid #dc2626;
   }
 
   .decorative-pattern {
-    background: #000000;
+    background: #ffffff;
   }
 
-  .glow-red {
-    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  .simple-shadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
-  .pulse-red {
-    animation: pulse-red 2s ease-in-out infinite;
+  .red-border {
+    border: 2px solid #dc2626;
   }
 
-  @keyframes pulse-red {
-    0%, 100% {
-      box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
-    }
-    50% {
-      box-shadow: 0 0 30px rgba(220, 38, 38, 0.7);
-    }
+  .simple-hover:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
   }
 }
